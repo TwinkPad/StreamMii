@@ -29,7 +29,7 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 - Sports  
 - More coming soon
 
-### System Requirements
+## System Requirements
 
 - `ffmpeg` installed and available in your system `PATH`
 ```bash
