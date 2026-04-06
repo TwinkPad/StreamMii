@@ -1,5 +1,5 @@
 <a href="https://t.me/streammiii">
-  <img src="https://img.shields.io/badge/Join%20our%20Telegram-blue?style=flat-square&logo=telegram">
+  <img src="https://img.shields.io/badge/JOIN%20TELEGRAM-26A6E1?style=for-the-badge&logo=telegram&logoColor=white">
 </a>
 
 # StreamMii
