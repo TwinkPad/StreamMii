@@ -1,3 +1,7 @@
+<a href="https://t.me/streammiii">
+  <img src="https://img.shields.io/badge/Join%20our%20Telegram-blue?style=flat-square&logo=telegram">
+</a>
+
 # StreamMii
 A simple tool that converts media into Wii compatible formats for smooth playback
 
