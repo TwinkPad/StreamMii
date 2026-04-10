@@ -76,16 +76,19 @@ Works and tested on Debian/Ubuntu/Mint, Fedora/RHEL/CentOS, Arch/Manjaro, openSU
 ```
 sudo chmod +x noob-install-by-motanu.sh
 ./noob-install-by-motanu.sh
+Soon: Linux ARM installer | But we will not help you with any issues that you will encounter.
 ```
 ### Windows:
 ```
 Just run the executable either from release either from the repository.
 Or if you are feeling freaky you can use the batch file.
+
+Soon: Windows ARM installer | But we will not help you with any issues that you will encounter.
 ```
 ### MacOS with Apple Silicon SoC:
 ```
 You are on your own but we will give you the sources you need.
-We can not help you with any issues that you will encounter.
+We can not help you with any issues that you will encounter. 
 
 There are multiple sources of ffmpeg for Apple Silicon, and each have their ups and downs,
 it's up to you to use the best one for you.
@@ -99,7 +102,7 @@ Note: We do not know how any of this will work with the new MacBook Neo, because
 slighty diffrent from their M SoC series, and we do not own one so we can not test it.
 ```
 
-### MacOS with Intel cpu:
+### MacOS with Intel CPU:
 ```
 You are on your own but we will give you the sources you need.
 We can not help you with any issues that you will encounter.
