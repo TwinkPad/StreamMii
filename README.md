@@ -84,6 +84,8 @@ Or if you are feeling freaky you can use the batch file.
 ### MacOS with Apple Silicon SoC:
 ```
 You are on your own but we will give you the sources you need.
+We can not help you with any issues that you will encounter.
+
 There are multiple sources of ffmpeg for Apple Silicon, and each have their ups and downs,
 it's up to you to use the best one for you.
 1. https://github.com/Vargol/ffmpeg-apple-arm64-build?tab=readme-ov-file
@@ -92,13 +94,16 @@ it's up to you to use the best one for you.
 Now you will need Python:
 https://www.python.org/downloads/release/python-3144/
 
-We do not know how any of this will work with the new MacBook Neo, because it is
+Note: We do not know how any of this will work with the new MacBook Neo, because it is
 slighty diffrent from their M SoC series, and we do not own one so we can not test it.
 ```
 
 ### MacOS with Intel cpu:
 ```
 You are on your own but we will give you the sources you need.
+We can not help you with any issues that you will encounter.
+
 ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-123838-gb462674645.7z
 python: https://www.python.org/downloads/release/python-3144/
+
 Note: Hackintosh not tested yet.
