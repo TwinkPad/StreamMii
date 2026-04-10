@@ -1,4 +1,4 @@
-<p align="right">
+<p align="center">
   <a href="https://t.me/streammiii">
     <img src="https://img.shields.io/badge/JOIN%20TELEGRAM-26A6E1?style=for-the-badge&logo=telegram&logoColor=white" alt="Join Telegram">
   </a>
@@ -79,7 +79,8 @@ sudo chmod +x noob-install-by-motanu.sh
 ```
 ### Windows
 ```
-Just run the executable either from release either from the repository, or if you're feeling freaky you can use the batch file.
+Just run the executable either from release either from the repository
+Or if you're feeling freaky you can use the batch file.
 ```
 ### MacOS with Apple Silicon Processor
 ```
