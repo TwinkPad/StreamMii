@@ -16,9 +16,8 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
     * **AMD**
     * **NVIDIA** (NVENC)
     * **Intel** (QSV)
-    * **CPU fallback** (not recommended due to lower quality/performance)
+    * **CPU fallback** (not recommended due to lower quality & performance)
 * **Automatic media metadata handling**
-
 ---
 
 ## 🛠️ Output Settings
@@ -28,7 +27,7 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 | **Resolution** | 640x360 or 640x480 depending on aspect ratio |
 | **Scaling** | Lanczos resampling |
 | **Bitrate** | 1000 kbps |
-| **FPS** | Usually matches source media |
+| **FPS** | **Usually** matches source media |
 
 ---
 
@@ -60,8 +59,6 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 
   </details>
 
-> **More coming soon!**
-
 ---
 
 ## 💻 System Requirements
@@ -72,3 +69,32 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 
 ```bash
 pip install guessit requests colorama
+
+```
+### How to use the noob installer for Linux.
+Works on Debian/Ubuntu/Mint, Fedora/RHEL/CentOS, Arch/Manjaro, openSUSE, Alpine.
+```
+sudo chmod +x noob-install-by-motanu.sh
+./noob-install-by-motanu.sh
+```
+### Windows
+```
+Just run the executable either from release either from the repository, or if you're feeling freaky you can use the batch file.
+```
+### MacOS with Apple Silicon Processor
+```
+You are on your own but I will give you the sources you need.
+There are multiple sources of ffmpeg for Apple Silicon, and each have their ups and downs,
+it's up to you to use the best one for you.
+1. https://github.com/Vargol/ffmpeg-apple-arm64-build?tab=readme-ov-file
+2. https://gitlab.com/martinr92/ffmpeg
+3. https://osxexperts.net/
+Now you will need Python:
+https://www.python.org/downloads/release/python-3144/
+```
+
+### MacOS with Intel Processor
+```
+You are on your own but I will give you the sources you need.
+ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-123838-gb462674645.7z
+python: https://www.python.org/downloads/release/python-3144/
