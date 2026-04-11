@@ -85,25 +85,25 @@ sudo chmod +x arm-noob-install-motan.sh
 FOR ARM USERS!!!
 
 AARCH64 should work fine on these:
-- Ubuntu (22.04 & 24.04)
-- Linux Mint (21 & 22 & 22.3)
-- Debian (11 & 12)
-- Raspberry Pi OS (Bookworm and Bullseye)
-- Arch linux
-- Manjaro
-- Fedora (38 & 39 & 40)
-- openSUSE (Leap & Tumbleweed)
+- Ubuntu (22.04 & 24.04).
+- Linux Mint (21 & 22 & 22.3).
+- Debian (11 & 12).
+- Raspberry Pi OS (Bookworm and Bullseye).
+- Arch linux.
+- Manjaro.
+- Fedora (38 & 39 & 40).
+- openSUSE (Leap & Tumbleweed).
 - Alpine 3.18+
 
 ARMV6 & ARMV7 should work fine on these:
-- Raspberry Pi OS (Bookworm and Bullseye)
-- Debian (11 & 12)
+- Raspberry Pi OS (Bookworm and Bullseye).
+- Debian (11 & 12).
 
 Partially working / limited:
-- Fedora on armv7 (Fedora dropped 32-bit arm since F37)
-- Alpine on armv6 (FFmpeg may be missing from repo, build from source)
-- RHEL /CentOS (FFmpeg not in base repos, needs EPEL + RPM Fusion added manually)
-- Ubuntu 20.04 (python3-venv may need manual install)
+- Fedora on armv7 (Fedora dropped 32-bit arm since F37).
+- Alpine on armv6 (FFmpeg may be missing from repo, build from source).
+- RHEL /CentOS (FFmpeg not in base repos, needs EPEL + RPM Fusion added manually).
+- Ubuntu 20.04 (python3-venv may need manual install).
 
 !!!! NOT COMPATIBLE WITH Gentoo, NixOS, Void Linux, Slackware, Android (Termux) !!!!
 !!!! We will not provide support for issues you will encounter on aarch64 & armv6 & armv7 !!!!
