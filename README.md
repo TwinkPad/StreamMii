@@ -79,8 +79,8 @@ Works and tested on Debian/Ubuntu/Mint, Fedora/RHEL/CentOS, Arch/Manjaro, openSU
 
 Or if you use arm...
 
-sudo chmod +x noob-install-by-motanu.sh
-./noob-install-by-motanu.sh
+sudo chmod +x arm-noob-install-motan.sh
+./arm-noob-install-motan.sh
 
 FOR ARM USERS!!!
 
