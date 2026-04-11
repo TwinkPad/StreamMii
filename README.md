@@ -14,9 +14,9 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 
 * **GPU Acceleration Support:**
     * **AMD**
-    * **NVIDIA** (NVENC)
-    * **Intel** (QSV)
-    * **CPU fallback** (not recommended due to lower quality & performance)
+    * **NVIDIA** (NVENC).
+    * **Intel** (QSV).
+    * **CPU fallback** (not recommended due to lower quality & performance).
 * **Automatic media metadata handling**
 ---
 
@@ -24,10 +24,10 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 
 | Parameter | Configuration |
 | :--- | :--- |
-| **Resolution** | 640x360 or 640x480 depending on aspect ratio |
-| **Scaling** | Lanczos resampling |
-| **Bitrate** | 1000 kbps |
-| **FPS** | **Usually** matches source media |
+| **Resolution** | 640x360 or 640x480 depending on aspect ratio. |
+| **Scaling** | Lanczos resampling. |
+| **Bitrate** | 1000 kbps. |
+| **FPS** | **Usually** matches source media. |
 
 ---
 
