@@ -109,7 +109,7 @@ ARMV6 & ARMV7 should work fine on these:
 ❗ Partially working / limited: ❗
 - Fedora on armv7 (Fedora dropped 32-bit arm since F37).
 - Alpine on armv6 (build FFmpeg from source).
-- RHEL & CentOS (FFmpeg not in base repos, needs EPEL + RPM Fusion added manually).
+- RHEL & CentOS (needs EPEL + RPM Fusion added manually).
 - Ubuntu 20.04 (python3-venv may need manual install).
 
 ❌ !!!! NOT COMPATIBLE WITH Gentoo, NixOS, Void Linux, Slackware, Android (Termux) !!!! ❌
@@ -120,22 +120,22 @@ ARMV6 & ARMV7 should work fine on these:
 Just run the executable either from release either from the repository.
 Or if you are feeling freaky you can use the batch file.
 
-Soon: Windows ARM installer | ❗ But we will not help you with any issues that you will encounter. ❗
+Soon: Windows ARM installer | ❌ But we will not help you with any issues that you will encounter. ❌
 ```
 ### 🔨 MacOS with Apple Silicon SoC:
 ```
 ❗ You are on your own but we will give you the sources you need. ❗
 ❌ We can not help you with any issues that you will encounter. ❌
 
-There are multiple sources of ffmpeg for Apple Silicon, and each have their ups and downs,it's up to you to use the best one for you.
+There are multiple sources of ffmpeg for Apple Silicon, and each have their ups and downs, it's up to you to use the best one for you.
 1. https://github.com/Vargol/ffmpeg-apple-arm64-build?tab=readme-ov-file
 2. https://gitlab.com/martinr92/ffmpeg
 3. https://osxexperts.net/
+
 Now you will need Python:
 https://www.python.org/downloads/release/python-3144/
 
-❗❗❗❗ Note: We do not know how any of this will work with the new MacBook Neo, because it is
-slighty diffrent from their M SoC series, and we do not own one so we can not test it. ❗❗❗❗
+❗❗❗❗ Note: We do not know how any of this will work with the new MacBook Neo, because it is slighty diffrent from their M SoC series, and we do not own one so we can not test ❗❗❗❗
 ```
 
 ### 🔨 MacOS with Intel CPU:
