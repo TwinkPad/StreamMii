@@ -120,7 +120,12 @@ ARMV6 & ARMV7 should work fine on these:
 Just run the executable either from release either from the repository.
 Or if you are feeling freaky you can use the batch file.
 
-Soon: Windows ARM installer | ❌ But we will not help you with any issues that you will encounter. ❌
+Or if you use arm...
+❗ You are on your own but we will give you the sources you need. ❗
+❌ We can not help you with any issues that you will encounter. ❌
+
+ffmpeg: https://github.com/tordona/ffmpeg-win-arm64
+python: https://www.python.org/downloads/release/python-31313/
 ```
 ### 🔨 MacOS with Apple Silicon SoC:
 ```
@@ -140,7 +145,7 @@ https://www.python.org/downloads/release/python-3144/
 
 ### 🔨 MacOS with Intel CPU:
 ```
-❗❗❗❗ You are on your own but we will give you the sources you need. ❗❗❗❗
+❗ You are on your own but we will give you the sources you need. ❗
 ❌ We can not help you with any issues that you will encounter. ❌
 
 ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-123838-gb462674645.7z
