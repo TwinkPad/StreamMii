@@ -9,7 +9,11 @@ from metadata_utils import (
     classify_file_by_name,
     fetch_movie_metadata,
 )
-
+# Just a wee word of warning here...
+# When I wrote this code, only God and I knew how it worked. Now, only God knows!
+# By the end of trying to fix whatever was broken here, you might have developed
+# several mental illnesses.
+# If you manage to fix this, you deserve a medal and an extra coffee.
 sports_categories = {
     "team sports": ["football", "basketball", "volleyball", "rugby", "baseball", "softball", "handball"],
     "combat sports": ["boxing", "mixed martial arts", "wrestling", "karate"],
