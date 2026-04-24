@@ -1,7 +1,8 @@
 import os
 import re
 import shutil
-
+# This has a couple destructive edge cases and some really bad choices. I would say the code is a bit brittle.
+# title[0].upper() may cause a crash if it returns ""
 from config import script_dir
 from metadata_utils import (
     safe_name,
@@ -24,10 +25,10 @@ sports_categories = {
     "equestrian": ["show jumping", "dressage"],
     "other": ["cricket", "hockey"],
 }
-
+# again, really sorry if I missed any, and you are free to report any missing sports as an issue.
 VIDEO_EXTS = {".mp4", ".mkv", ".avi", ".mov", ".wmv", ".flv"}
 SUB_EXTS = {".srt"}
-MIN_JAV_SIZE = 50 * 1024 * 1024 # for deleting the small porn ad mp4s
+MIN_JAV_SIZE = 50 * 1024 * 1024 # For example, torrents from OneJAV sometimes have a small MP4 file which is usually just an ad for whatever. I raised this to account for any edge cases in which there could be "collateral victims" as I would say. This deletes all files under 50MB.
 
 
 def cleanup_single_folder(path):
@@ -49,6 +50,7 @@ def cleanup_single_folder(path):
     # If there are SRTs but NO videos
     if not has_vid and has_srt:
         only_srts = all(os.path.splitext(f)[1].lower() in SUB_EXTS for f in files)
+        # This is too aggressive, will try to fix in next release.
         if only_srts:
             # ONLY srts exist, delete the entire folder
             shutil.rmtree(path)
@@ -59,6 +61,7 @@ def cleanup_single_folder(path):
                     try:
                         os.remove(os.path.join(path, f))
                     except OSError:
+                        # maybe try to have proper permissions next time, this is nasty...
                         pass
 
 
@@ -108,17 +111,19 @@ def organize_media_by_type(fp, mode, sport_name=None, adult_mode=None, adult_dat
                 s = re.search(r"s(\d{1,2})", base_name, re.I)
                 season = s.group(1) if s else "01"
                 raw = base_name.split(".")[0]
-                show = safe_name(fetch_movie_metadata(raw) or raw, "unknown_show")
+                show = safe_name(fetch_movie_metadata(raw) or raw, "unknown_show") #This is nasty, even though we have both guessit and OMDB API
                 dest = os.path.join(script_dir, "tv shows", show[0].upper(), show, f"season {season}")
             else:
                 y = re.search(r"(19\d{2}|20[0-2]\d)", base_name)
                 year = y.group(0) if y else None
                 guess = re.sub(r"[.\-_]", " ", base_name).strip()
+                # This leaves garbage names if metadata fetch fails, will try to find a less barbaric method.
                 movie = safe_name(fetch_movie_metadata(guess, year) or guess, "unknown_movie")
                 dest = os.path.join(script_dir, "movies", movie[0].upper(), movie)
             move_and_cleanup(dest)
 
     elif mode == "2":
+        # audio mode, this is hacky but I found it works for most cases. There is an edge case where it'll make folders for every song if it starts with "1." or whatever number it might be.
         parent_folder = os.path.basename(src_dir)
         album = safe_name(parent_folder, "unknown_album")
         parts = base_name.rsplit(".", 1)[0].split(" - ")
@@ -148,9 +153,11 @@ def organize_media_by_type(fp, mode, sport_name=None, adult_mode=None, adult_dat
                     os.rename(fp, new_fp)
                     fp = new_fp
                     base_name = clean_name
+                    # This might try to move a nonexistent file...
             code = safe_name(os.path.splitext(base_name)[0], "uncategorized")
             dest = os.path.join(script_dir, "adult", "jav", code)
         elif adult_mode == "5_solo":
+            # This is confusing and error prone.
             creator = safe_name(adult_data or "unknown_creator")
             dest = os.path.join(script_dir, "adult", "lgbt", "solo", creator[0].upper(), creator)
         elif adult_mode == "5_group":
@@ -165,7 +172,9 @@ def organize_media_by_type(fp, mode, sport_name=None, adult_mode=None, adult_dat
         move_and_cleanup(dest)
 
     elif mode in ["5", "6"]:
+        # I don't know much about k-dramas, I treat them just like movies and TV shows, except they're korean?? Makes no sense. 
         cats = {"5": "k-drama", "6": "anime"}
+        # I believe this is easy work for animes, just treat them as TV shows...
         episodic = re.search(r"(s\d{1,2}e\d{1,2}|\d{1,2}x\d{1,2}|ep\s?\d{1,3}|\b\d{1,3}\b)", base_name, re.I)
         season = "01" if episodic else None
         parent_title = os.path.basename(src_dir)
@@ -181,6 +190,7 @@ def organize_media_by_type(fp, mode, sport_name=None, adult_mode=None, adult_dat
         move_and_cleanup(dest)
 
 def sports_submenu():
+    # there's so many here, I'm sorry if I missed some.
     print("pick a sport category:")
     cats = list(sports_categories.keys())
     for i, cat in enumerate(cats, 1):
