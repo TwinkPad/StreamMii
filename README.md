@@ -158,3 +158,12 @@ python: https://www.python.org/downloads/release/python-3144/
 The same StreamMii but now it is monolithic. What does that mean? Instead of downloading 6 files you download 1 file, which is easier to manage. INSTALLER IS NOT INCLUDED IN IT!
 To get it started now you need to download the monolithic StreamMii and your respective OS n00b installer, run the installler and then StreamMii-Monolithic.
 ```
+### 🔨 StreamMii-Monolithic-Alpha
+```
+3x Times faster probing!
+When fails, now it fails with a clean error instead of crashing!
+New H.246 encoder for non standard pixel formats that will not ruin the playback!
+Also its now more safe to run it, it won't delete itself or delete anything else or outside of it. (The standard monolithic version and cucu version may delete itself or files around it!)
+Bug fixes!
+Secure IMDB!
+```
