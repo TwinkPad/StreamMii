@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://t.me/streammiii">
-    <img src="https://img.shields.io/badge/JOIN%20TELEGRAM-26A6E1?style=for-the-badge&logo=telegram&logoColor=white" alt="Join Telegram">
-  </a>
-</p>
+
 
 ---
 
