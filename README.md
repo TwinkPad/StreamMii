@@ -223,7 +223,7 @@ Changes:
   Toggle off with `skip_compliant: false` in config, or `--force-reencode`.
 - **Stereo downmix** (`-ac 2`) WiiMC is stereo; 5.1 sources no longer play wrong
   or waste bitrate.
-- **VBV cap** (`-maxrate 1200k -bufsize 2000k`, H.264 encoders only) stops
+- **VBV cap** (`-maxrate 1000k -bufsize 2000k`, H.264 encoders only) stops
   bitrate spikes that stutter on the Wii's small decode buffer.
 - **Don't re transcode existing `.mp3`** in audio mode (avoids generational loss).
 - **`--dry-run`** — shows exactly what would happen to each file, touches nothing.
