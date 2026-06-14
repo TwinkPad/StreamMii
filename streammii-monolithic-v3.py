@@ -449,7 +449,7 @@ def process_video(src_path):
             # cap bitrate spikes so the wii small decode buffer
             # doesnt stutter vbv caps only make sense on the h264 encoders
             if enc != "libxvid":
-                cmd += ["-maxrate", "1200k", "-bufsize", "2000k", "-pix_fmt", "yuv420p"]
+                cmd += ["-maxrate", "1000k", "-bufsize", "2000k", "-pix_fmt", "yuv420p"]
             if aspect_flag and enc == "libxvid":
                 cmd += ["-aspect", aspect_flag]
 
