@@ -253,3 +253,10 @@ Why is there two or more versions of monolithic StreamMii in the repo?
 > To see the changes from version to version.
 
 > And overall a backup of everything that i made.
+
+### Dedicated StreamMii-Monolithic Github Page:
+
+<a href="https://github.com/motan1337/StreamMii-Monolithic">
+- I will leave this here because its getting very cluttery and the dedicated page for monolithic is easier for me to controll...
+- Better README.md is there, all files you need are there, no unneeded files exist, or diffrent types of streammii (just old monolithic
+versions).
