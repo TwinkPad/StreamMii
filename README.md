@@ -260,3 +260,16 @@ Why is there two or more versions of monolithic StreamMii in the repo?
 - I will leave this here because its getting very cluttery and the dedicated page for monolithic is easier for me to controll...
 - Better README.md is there, all files you need are there, no unneeded files exist, or diffrent types of streammii (just old monolithic
 versions).
+
+### Check out my partner in crime /s others projects(motan1337):
+> https://github.com/motan1337/clipctl.py
+
+> https://github.com/motan1337/StreamMii-Monolithic
+
+> https://dev.motan-femboy.cc/
+
+> https://github.com/motan1337/Shitty-games
+
+> https://github.com/motan1337/4chan-shitty-clone-motan
+
+> https://github.com/motan1337/Templates-for-web-devs
