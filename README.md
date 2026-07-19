@@ -273,3 +273,9 @@ versions).
 > https://github.com/motan1337/4chan-shitty-clone-motan
 
 > https://github.com/motan1337/Templates-for-web-devs
+
+> https://github.com/motan1337/clipper
+
+> https://github.com/motan1337/hallucinations-test
+
+> https://github.com/motan1337/
